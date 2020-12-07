@@ -24,8 +24,6 @@ public class Controller {
 
 	private void login(String username, String address, int port) {
 		((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-		System.out.println("Name: " + username + "\n"
-				+ "Address: " + address + "\n"
-				+ "Port: " + port);
+		new Client(username, address, port);
 	}
 }
