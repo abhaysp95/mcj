@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mcj.Controller">
    <children>
       <VBox layoutX="75.0" prefHeight="400.0" prefWidth="250.0">
          <children>
@@ -18,7 +18,7 @@
                      <font>
                         <Font name="Monaco" size="18.0" />
                      </font></Label>
-                  <TextField prefHeight="26.0" prefWidth="320.0">
+                  <TextField fx:id="enteredName" prefHeight="26.0" prefWidth="320.0">
                      <font>
                         <Font name="Monaco" size="15.0" />
                      </font></TextField>
@@ -40,7 +40,7 @@
                      <font>
                         <Font name="Monaco" size="18.0" />
                      </font></Label>
-                  <TextField>
+                  <TextField fx:id="enteredAddress">
                      <font>
                         <Font name="Monaco" size="15.0" />
                      </font></TextField>
@@ -56,7 +56,7 @@
                      <font>
                         <Font name="Monaco" size="18.0" />
                      </font></Label>
-                  <TextField>
+                  <TextField fx:id="enteredPort">
                      <font>
                         <Font name="Monaco" size="18.0" />
                      </font></TextField>
@@ -71,7 +71,7 @@
             </VBox>
          </children>
       </VBox>
-	  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="436.0" mnemonicParsing="false" text="Enter">
+	  <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="436.0" mnemonicParsing="false" onAction="#perfomLogin" text="Login">
          <font>
             <Font name="Monaco" size="20.0" />
          </font></Button>
